@@ -1,0 +1,91 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* template.css */
+a { color:#718500; text-decoration:none }
+a:hover,
+a:active,
+a:focus { color:#000; text-decoration:underline }
+ul li a {color: #000; text-decoration: none}
+ul li a:hover {color:#718500; text-decoration: underline}
+#gkMainBlock a { color:#718500; }
+/* joomla.css */
+.tool-title { background:#718500; }
+ul.pagination li { background: #FFFEF4!important; border: 1px solid #EAE8CC; }
+.gkBottom1 .mod_banners .footer a,
+.gkBottom2 .mod_banners .footer a { color: #9a0005; }
+a.readon,
+input[type="submit"],
+.adminform button,
+input[type="button"] {text-decoration: none;}
+.adminform button:hover,
+.adminform button:focus,
+#adminForm button:hover,
+#adminForm button:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+a.readon:hover,
+a.readon:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus { background:#718500; color: #fff; }
+
+dl.article-info a { color: #cda016 }
+#gkBottom1 .mod_banners .bannerfooter a,
+#gkBottom2 .mod_banners .bannerfooter a { color: #ac0000; }
+.search-results dt.result-title a { color: #cda016 }
+/* header block */
+#gkHeader {color:#e75630; background:url('../images/style2/header_green_bg.jpg') no-repeat 0 0}
+/* nsp */
+.nspLinks ul li h4,
+.nspLinks ul li h4 a{color:#718500;}
+.nspArt p.nspText a {color: #718500!important; background: none!important}
+/* Image Show GK4 */
+#gkHeader .gkIsWrapper-gk_corporate2{background:transparent url('../images/style2/header_green_bg.jpg') no-repeat 0 0}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsPreloader{background:#aac900 url('../images/style2/header_green_bg.jpg') no-repeat 0 0}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsTextItem h4 a:hover, 
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt h4 a:hover{color:#aac900}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt a.readon{color:#aac900}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt a.readon:hover{background:#718500; color:#fff;}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li{border-top:1px solid #C4D94C!important; color:#D5E868}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li:first-child{ border-top: none!important; }
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li.active { color:#fff!important; }
+/* color suffix */
+div.box.color {background:transparent url('../images/style2/header_green_bg.jpg') no-repeat 0 0!important; border:1px solid #718500!important; color: #fff !important}
+div.box.color > h3 > span {background:#718500!important}
+div.box.color ul li{border-top:1px solid #9FB334!important}
+div.box.color ul li ul{border-left:1px dotted #718500!important}
+div.box.color a.readon{color:#fff!important; background:#aac900!important}
+div.box.color a.readon:hover, 
+div.box.color a.readon:active, 
+div.box.color a.readon:focus{background:#718500!important}
+div.box.color .button{background:#718500!important; border:1px solid #aac900!important; border-top:none!important; border-left:none!important}
+div.box.color .button:hover, 
+div.box.color .button:focus{background:#718500!important}
+div.box.color a {color: #fff!important}
+
+/* Header module*/
+#gkHeaderModules li:first-child{border-top:none}
+#gkHeaderModules li{border-top:1px solid #C4D94C}
+#gkHeaderModules a{color:#C9D862}
+#gkHeaderModules a:hover {color: #fff; text-decoration: none}
+#gkHeaderModules a.readon { background:#718500; }
+#gkHeaderModules a.readon:hover { background:#718500; }
+#gkHeaderModules a.readon.header_art {background:#fff; color:#aac900; }
+#gkHeaderModules a.readon.header_art:hover { background:#718500; color:#fff; cursor:pointer; }
+/*
+ * Highlighter GK4
+ */
+.gkHighlighterHeader {background:url('../images/style2/header_green_bg.jpg') no-repeat 0 0 !important; color:#e75630 !important;} 
+.gkHighlighterInterface,
+.gkHighlighterWrapper {margin: 0 !important;background: transparent !important; height: 24px !important; line-height: 24px !important}

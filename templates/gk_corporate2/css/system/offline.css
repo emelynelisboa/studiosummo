@@ -1,0 +1,24 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+body {font-family: Arial, Helvetica, Sans Serif; font-size: 12px;color: #979189; background:#f4f2ef;}
+fieldset { width: 480px; border:none; padding:0; margin:0; }
+label {float: left; width: 100px; margin: auto}
+input[type="submit"] {display:block; background:#dddad8; border:1px solid #ccc!important; border-top:none!important; border-left:none!important; text-transform:uppercase; color:#fff; font-weight:bold; height:24px; line-height:24px; font-size:10px; margin: 15px auto }
+input[type="submit"]:hover,
+input[type="submit"]:focus{ background: #8A8474 }
+#form-login-remember { display:inline; }
+#form-login-username, 
+#form-login-password,
+#form-login-remember { margin: 10px auto 0; display:block; width: 300px } 
+#username,
+#passwd { display: block; width:185px; height:30px; line-height: 30px; border:1px solid #d6d4d1; border-right:none;border-bottom:none;background:#fff;	height:24px;color:#979189;padding-left:8px;}
+#message { width: 100%;padding: 2px; margin: 20px 0 10px;font-weight: bold; line-height: 16px;text-align:center; text-transform:uppercase; color: #fff;background-color: #BBB6B1}
+#logo { height:39px; width:149px; margin: 30px auto 20px; padding:0; background:transparent url('../../images/logo.png') no-repeat 0 0; }
+#content { width: 480px; margin: 0 auto; padding: 0 0px 20px 0px; font: normal 12px/1.9  Arial, Verdana, sans-serif; color: #979189;}

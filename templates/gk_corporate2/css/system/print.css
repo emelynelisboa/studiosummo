@@ -1,0 +1,15 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+body { background: #fff; font:normal 12px/14px Verdana, Arial, sans-serif; color:#444; }
+a { text-decoration: none; color: #000; }
+#gkPrintTop { border-bottom: 1px solid #222; padding: 20px 0; }
+#gkPrintBottom { border-top: 1px solid #222; padding: 10px 0 20px 0; font: italic 11px/14px Veradna, Arial, sans-serif; }
+#gkComponent h1{ margin-bottom: 32px; font: normal 250%/120% "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+ul.actions { display: none; }
