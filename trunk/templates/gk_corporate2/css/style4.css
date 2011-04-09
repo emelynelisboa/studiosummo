@@ -1,0 +1,90 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* template.css */
+a { color:#736a61; text-decoration:none }
+a:hover,
+a:active,
+a:focus { color:#000; text-decoration:underline }
+ul li a {color: #000; text-decoration: none}
+ul li a:hover {color:#736a61; text-decoration: underline}
+#gkMainBlock a { color:#736a61; }
+/* joomla.css */
+.tool-title { background:#736a61; }
+ul.pagination li { background: #FFFEF4!important; border: 1px solid #EAE8CC; }
+.gkBottom1 .mod_banners .footer a,
+.gkBottom2 .mod_banners .footer a { color: #115bb2; }
+a.readon,
+input[type="submit"],
+.adminform button,
+input[type="button"] {text-decoration: none;}
+.adminform button:hover,
+.adminform button:focus,
+#adminForm button:hover,
+#adminForm button:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+a.readon:hover,
+a.readon:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus { background:#736a61; color: #fff; }
+dl.article-info a { color: #cda016 }
+#gkBottom1 .mod_banners .bannerfooter a,
+#gkBottom2 .mod_banners .bannerfooter a { color: #115bb2; }
+.search-results dt.result-title a { color: #cda016 }
+/* header block */
+#gkHeader {color:#e75630; background:url('../images/style4/header_grey_bg.jpg') no-repeat 0 0}
+/* nsp */
+.nspLinks ul li h4,
+.nspLinks ul li h4 a{color:#736a61}
+.nspArt p.nspText a {color:#736a61!important; background: none!important}
+/* Image Show GK4 */
+#gkHeader .gkIsWrapper-gk_corporate2{background:transparent url('../images/style4/header_grey_bg.jpg') no-repeat 0 0}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsPreloader{background:#a7a29c url('../images/style4/header_grey_bg.jpg') no-repeat 0 0}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsTextItem h4 a:hover, 
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt h4 a:hover{color:#a7a29c}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt a.readon{color:#a7a29c}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsArt a.readon:hover{background:#736a61; color:#fff}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li{border-top:1px solid #bbb!important; color:#d6d6d6}
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li:first-child{ border-top: none!important; }
+#gkHeader .gkIsWrapper-gk_corporate2 .gkIsList li.active { color:#fff!important; }
+/* color suffix */
+div.box.color {background:transparent url('../images/style4/header_grey_bg.jpg') no-repeat 0 0!important; border:1px solid #736a61!important; color: #fff !important}
+div.box.color > h3 > span {background:#736a61!important}
+div.box.color ul li{border-top:1px solid #837C72!important}
+div.box.color ul li ul{border-left:1px dotted #bbb!important}
+div.box.color a.readon{color:#fff!important; background:#a7a29c!important}
+div.box.color a.readon:hover, 
+div.box.color a.readon:active, 
+div.box.color a.readon:focus{background:#736a61!important}
+div.box.color .button{background:#736a61!important; border:1px solid #a7a29c!important; border-top:none!important; border-left:none!important}
+div.box.color .button:hover, 
+div.box.color .button:focus{background:#736a61!important}
+div.box.color a {color: #fff!important}
+
+/* Header module*/
+#gkHeaderModules li:first-child{border-top:none}
+#gkHeaderModules li{border-top:1px solid #bbb}
+#gkHeaderModules a{color:#fff}
+#gkHeaderModules a:hover {color: #fff; text-decoration: none}
+#gkHeaderModules a.readon {background:#736a61}
+#gkHeaderModules a.readon:hover {background:#a7a29c}
+#gkHeaderModules a.readon.header_art {background:#fff; color:#a7a29c}
+#gkHeaderModules a.readon.header_art:hover {background:#736a61; color:#fff; cursor:pointer; }
+/*
+ * Highlighter GK4
+ */
+.gkHighlighterHeader {color:#e75630; background:url('../images/style4/header_grey_bg.jpg') no-repeat 0 0 !important} 
+.gkHighlighterInterface,
+.gkHighlighterWrapper {margin: 0 !important;background: transparent !important; height: 24px !important; line-height: 24px !important}

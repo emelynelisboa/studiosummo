@@ -1,0 +1,23 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+body{ width: 480px; min-height: 100%; margin: 0 auto; padding: 0 0 100px; font: normal 12px/1.9  Helvetica, Arial, sans-serif; color: #444; background-color: #F4F2EF; color: #979189 }
+a, a:hover, a:active, a:focus { color: #979189; text-decoration: underline;  }
+h2 { height:40px;line-height:40px;font-size:20px;color:#fff;background:#ec3200;padding:0 20px;text-shadow:1px 1px 3px #b02500;	border:1px solid #b02500;border-left:none;border-top:none;margin:13px 0}
+ol, ul, p { width: 400px; margin:0; padding: 3px 0; list-style-position: inside }
+ul { list-style-position: square }
+ol li { font-size: 12px; line-height: 1.1em; padding-left: 22px }
+ol li strong { font-weight: bold }
+ul li {margin-left: 25px; list-style-type: square; }
+#techinfo {}
+#techinfo > div {background:#bbb6b1; margin: 8px 0}
+#techinfo > div > p {font-weight: bold; font-size: 12px; color: #fff; text-align: left; padding: 0; margin-left: 5px; line-height: 12px; padding: 6px 0 7px}
+#techinfo p {  width: 100%; font-size: 12px; text-align: left; color: #878787; line-height: 12px}
+#errorboxbody {margin: 10px auto}
+#errorContent {border:1px solid #c8c3be;border-left:none; border-top:none; background:#fff;padding:25px 20px 10px;margin:10px 0 0 0;}

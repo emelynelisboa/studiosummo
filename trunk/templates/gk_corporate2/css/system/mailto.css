@@ -1,0 +1,23 @@
+/*
+#------------------------------------------------------------------------
+# corporate2 - March 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body { background: #fbfbfb; color:#444; font:13px/1.8 Verdana,Geneva,sans-serif; }
+h2 { text-align:center; font-size:150%; color: #222; }
+a { text-decoration: none; color: #979189; }
+a:hover, a:active, a:focus { color: #000; text-decoration: un }
+p { margin: 0.8em 0 }
+a > img { display: none!important; }
+#mailto-window { padding: 0 20px; }
+form div label { display: block; width:100%; font-size:90%; }
+form div input { width:96%; border: 1px solid #e1e1e1; border-top-color: #c1c1c1; padding: 6px; font-family: Arial, Helvetica, sans-serif; color: #656565; }
+.button { float: right; background:#979189; border:1px solid #6C6459!important; border-top:none!important; border-left:none!important; text-transform:uppercase; color:#fff; font-weight:bold; height:25px; line-height:25px; font-size:10px;}
+.button:first-child { float: left; }
+.button:hover,
+.button:focus { color: #000; background-color: #F4F2EF;}
