@@ -99,7 +99,7 @@ jimport( 'joomla.utilities.string' );
 			?>
 			
 			
-		<div class="gkIsArt gkUnvisible" style="position:absolute;z-index:<?php echo $i+5; ?>;width:<?php echo ($show_list == 1) ? $art_width : '100'; ?>%;<?php if($show_list == 1 && $list_position == 'gkLeftFloat') echo 'margin-left:'.(100-$art_width).'%;'; ?>">
+		<div class="gkIsArt gkUnvisible <?php if($i == 0) echo 'gkFirstSlide'; ?>" style="position:absolute;z-index:<?php echo $i+5; ?>;width:<?php echo ($show_list == 1) ? $art_width : '100'; ?>%;<?php if($show_list == 1 && $list_position == 'gkLeftFloat') echo 'margin-left:'.(100-$art_width).'%;'; ?>">
 			<div>
 				<?php if($item_title == 1): ?>
 					<?php if($title_link == 1): ?>

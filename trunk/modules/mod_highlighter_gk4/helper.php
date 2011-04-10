@@ -181,8 +181,7 @@ class NH_GK4_Helper {
 			// if mootools file doesn't exists in document head section
 			if(!$engine_founded){ 
 				// add new script tag connected with mootools from module
-				$headData["scripts"][$uri->root().'modules/mod_highlighter_gk4/interface/scripts/engine.js'] = "text/javascript";
-				$document->setHeadData($headData);
+				$document->addScript($uri->root().'modules/mod_highlighter_gk4/interface/scripts/engine.js');
 			}
 		}
 		//

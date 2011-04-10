@@ -122,7 +122,7 @@ class GKIS_gk_corporate2_Controller {
 		$wordcount = $this->config['config']->gk_corporate2->gk_corporate2_wordcount;
 		$clean_xhtml = $this->config['config']->gk_corporate2->gk_corporate2_clean_xhtml;
 		// load view
-		require_once (dirname(__FILE__).DS.'view.php');
+		require(dirname(__FILE__).DS.'view.php');
 	}
 }
 

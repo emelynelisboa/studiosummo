@@ -89,7 +89,7 @@ ul.gkCircle1 li,
 ul.gkCircle2 li, 
 ul.gkSquare1 li, 
 ul.gkSquare2 li, 
-ul.gkSquare3 li { margin:10px 0!important; line-height:0.83em!important; list-style-position:inside; overflow:inherit; }
+ul.gkSquare3 li { margin:10px 0!important; line-height:1em!important; list-style-position:inside; overflow:inherit; }
 ul.gkCircle2 { list-style-type:circle }
 ul.gkSquare1 { list-style-type:square }
 /* Numbers */

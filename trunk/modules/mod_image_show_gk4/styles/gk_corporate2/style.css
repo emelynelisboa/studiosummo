@@ -21,7 +21,8 @@
 .gkIsWrapper-gk_corporate2 .gkIsNext div { background-position:-23px -46px!important; }
 .gkIsWrapper-gk_corporate2 .gkIsPrev { right:inherit; left:-35px; }
 .gkIsWrapper-gk_corporate2 .gkIsNext { background-position:-23px 0!important; }
-.gkIsWrapper-gk_corporate2 .gkIsArt { float:left; }
+.gkIsWrapper-gk_corporate2 .gkIsArt { float:left; visibility:hidden;}
+.gkIsWrapper-gk_corporate2 .gkIsArt.gkFirstSlide { visibility:visible; }
 .gkIsWrapper-gk_corporate2 .gkIsArt div { padding:50px 40px 50px 50px; }
 .gkIsWrapper-gk_corporate2 .gkIsList.gkRightFloat div { padding:50px 35px 50px 0; }
 .gkIsWrapper-gk_corporate2 .gkIsList.gkLeftFloat { float:left; }
@@ -47,4 +48,4 @@
 .gkIsWrapper-gk_corporate2 .gkIsList li { border-top:1px solid #bbb!important; color:#d6d6d6; background:none; padding-left:0!important; height:auto!important; line-height:24px; background:none!important; cursor:pointer; list-style-type:none;}
 .gkIsWrapper-gk_corporate2 .gkIsList li.active { color:#fff; }
 .gkIsWrapper-gk_corporate2 .gkIsList li:first-child { border-top:none; }
-.gkIsWrapper-gk_corporate2 .gkUnvisible{ height:1px; left:-10000px; overflow:hidden; position:absolute; top:auto; width:1px; } 
+.gkIsWrapper-gk_corporate2 .gkUnvisible{ height:1px; left:-10000px; overflow:hidden; position:absolute; top:0; width:1px; } 

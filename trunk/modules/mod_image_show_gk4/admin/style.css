@@ -107,6 +107,6 @@ a:hover.modal-img { background-position: -231px 0;  }
 #gk_module_updates li span { display: block; float: left; height: 34px; line-height: 34px; padding: 0 0 0 20px; border-left: 1px solid #eee }
 span.gk_update_version { width: 110px; background: #f5faff; }
 span.gk_update_data { width: 150px; background: #f9f9f9; }
-span.gk_update_link a { padding: 4px 12px; -moz-border-radius: 26px; background: #376623; text-transform: uppercase; font: bold 10px Arial, Helvetica, sans-serif; color: #fff; line-height: 34px; }
+span.gk_update_link a { padding: 4px 12px; -moz-border-radius: 26px; background: #af0fad; text-transform: uppercase; font: bold 10px Arial, Helvetica, sans-serif; color: #fff; line-height: 34px; }
 span.gk_update_link a:hover { background: #222; text-decoration: none; }
 #gk_module_updates p { color: #555 }
