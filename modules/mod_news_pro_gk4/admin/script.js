@@ -11,47 +11,47 @@
 window.addEvent("domready",function(){
 	getUpdates();
 	//
-	var data_sources = [$('jform_params_com_categories'), $('jform_params_com_articles')];
+	var data_sources = [document.id('jform_params_com_categories'), document.id('jform_params_com_articles')];
 	//
 	data_sources.each(function(el,j){
 		el.getParent().setStyle('display','none');
 	});
 	
-	$('jform_params_'+$('jform_params_data_source').value).getParent().setStyle('display','');
+	document.id('jform_params_'+document.id('jform_params_data_source').value).getParent().setStyle('display','');
 	
-	$('jform_params_data_source').addEvent("change", function(){
+	document.id('jform_params_data_source').addEvent("change", function(){
 		data_sources.each(function(el,j){
 			el.getParent().setStyle('display','none');
 		});
 	
-		$('jform_params_'+$('jform_params_data_source').value).getParent().setStyle('display','');	
+		document.id('jform_params_'+document.id('jform_params_data_source').value).getParent().setStyle('display','');	
 	});
-	$('jform_params_data_source').addEvent("blur", function(){
+	document.id('jform_params_data_source').addEvent("blur", function(){
 		data_sources.each(function(el,j){
 			el.getParent().setStyle('display','none');
 		});
 	
-		$('jform_params_'+$('jform_params_data_source').value).getParent().setStyle('display','');
+		document.id('jform_params_'+document.id('jform_params_data_source').value).getParent().setStyle('display','');
 	});
 	//
-	if($('jform_params_links_position').value == 'bottom') $('jform_params_links_width').getParent().setStyle('display','none');
-	else $('jform_params_links_width').getParent().setStyle('display','');	
+	if(document.id('jform_params_links_position').value == 'bottom') document.id('jform_params_links_width').getParent().setStyle('display','none');
+	else document.id('jform_params_links_width').getParent().setStyle('display','');	
 		
-	$('jform_params_links_position').addEvent('change', function(){
-		if($('jform_params_links_position').value == 'bottom') $('jform_params_links_width').getParent().setStyle('display','none');
-		else $('jform_params_links_width').getParent().setStyle('display','');	
+	document.id('jform_params_links_position').addEvent('change', function(){
+		if(document.id('jform_params_links_position').value == 'bottom') document.id('jform_params_links_width').getParent().setStyle('display','none');
+		else document.id('jform_params_links_width').getParent().setStyle('display','');	
 	});
 
-	$('jform_params_links_position').addEvent('blur', function(){
-		if($('jform_params_links_position').value == 'bottom') $('jform_params_links_width').getParent().setStyle('display','none');
-		else $('jform_params_links_width').getParent().setStyle('display','');
+	document.id('jform_params_links_position').addEvent('blur', function(){
+		if(document.id('jform_params_links_position').value == 'bottom') document.id('jform_params_links_width').getParent().setStyle('display','none');
+		else document.id('jform_params_links_width').getParent().setStyle('display','');
 	});
 	
-	var horder = $('jform_params_news_header_order');
-	var iorder = $('jform_params_news_image_order');
-	var torder = $('jform_params_news_text_order');
-	var inorder = $('jform_params_news_info_order');
-	var in2order = $('jform_params_news_info2_order');
+	var horder = document.id('jform_params_news_header_order');
+	var iorder = document.id('jform_params_news_image_order');
+	var torder = document.id('jform_params_news_text_order');
+	var inorder = document.id('jform_params_news_info_order');
+	var in2order = document.id('jform_params_news_info2_order');
 	
 	horder.addEvent("change", function(){
 		var unexisting = [false, false, false, false, false];
@@ -171,7 +171,7 @@ window.addEvent("domready",function(){
 	$$('.text-limit').each(function(el){
 		var name = el.get('id') + '_type';
 		var parent = el.getParent();
-		el.inject($(name),'before');		
+		el.inject(document.id(name),'before');		
         parent.dispose();
 	});
 	
@@ -211,9 +211,9 @@ window.addEvent("domready",function(){
 });
 // function to generate the updates list
 function getUpdates() {
-	$('jform_params_module_updates-lbl').destroy(); // remove unnecesary label
+	document.id('jform_params_module_updates-lbl').destroy(); // remove unnecesary label
 	var update_url = 'http://www.gavick.com/updates.raw?task=json&tmpl=component&query=product&product=mod_news_pro_gk4_j16';
-	var update_div = $('gk_module_updates');
+	var update_div = document.id('gk_module_updates');
 	update_div.innerHTML = '<div id="gk_update_div"><span id="gk_loader"></span>Loading update data from GavicPro Update service...</div>';
 	
 	new Asset.javascript(update_url,{

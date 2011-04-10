@@ -105,7 +105,7 @@ class GKIS_gk_coffe_Controller {
 		$width = $this->config['config']->gk_coffe->gk_coffe_image_width;
 		$height = $this->config['config']->gk_coffe->gk_coffe_image_height;
 		// load view
-		require_once (dirname(__FILE__).DS.'view.php');
+		require(dirname(__FILE__).DS.'view.php');
 	}
 }
 

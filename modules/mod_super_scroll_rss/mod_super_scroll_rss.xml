@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>Super Scroll RSS</name>
+  <author>Federico Luzi</author>
+  <creationDate>2009/12/22</creationDate>
+  <copyright>Copyright Federico Luzi All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>pcsapiens@gmail.com</authorEmail>
+  <authorUrl>www.pc-sapiens.net</authorUrl>
+  <version>2.0.0</version>
+  <description>
+  				Module Super Scroll RSS for Joomla 1.5 / 1.6 by Federico Luzi &lt;br&gt;
+				&lt;b&gt; http://www.pc-sapiens.net &lt;/b&gt;  &lt;br&gt;
+				pcsapiens@gmail.com &lt;br&gt;&lt;br&gt;
+				Super Scroll RSS is licensed GPL &lt;br&gt;
+				Super Scroll RSS is inspired by code found on the Internet. &lt;br&gt;
+				Special thanks for Antonio Lupetti (http://woork.blogspot.com) &lt;br&gt;
+				and Capitol Media (http://www.capitolmedia.com)
+  </description>
+  <files>
+    <filename module="mod_super_scroll_rss">mod_super_scroll_rss.php</filename>
+    <filename>js/mootools.svn.js</filename>
+    <filename>js/newsticker.js</filename>
+    <filename>js/moostick.js</filename>
+  </files>
+  <params>
+    <param name="altezza" type="text" default="250" label="Height" description="Altezza dello scroll espressa in Pixel" />
+    <param name="larghezza" type="text" default="170" label="Width" description="Larghezza dello scroll espressa in Pixel" />
+    <param name="feed" type="text" size="40" default="http://www.pc-sapiens.net/feed" label="Feed" description="Indirizzo del feed rss" />
+    <param name="mootools" type="list" default="No" label="Usare mootools personalizzato?" description="Usare mootools personalizzato?">
+      <option value="No">No</option>
+      <option value="Si">Si</option>
+    </param>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+  </params>
+  <!-- J1.6 Parametri ripetuti per le installazioni di joomla 1.6 che non è in grado di comprendere i <params> elencati sopra. -->
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="altezza" type="text" default="250" label="Height" description="Altezza dello scroll espressa in Pixel" />
+        <field name="larghezza" type="text" default="170" label="Width" description="Larghezza dello scroll espressa in Pixel" />
+        <field name="feed" type="text" size="40" default="http://www.pc-sapiens.net/feed" label="Feed" description="Indirizzo del feed rss" />
+        <field name="mootools" type="list" default="No" description="Usare mootools personalizzato?" label="Usare mootools personalizzato?">
+          <option value="No">No</option>
+          <option value="Si">Si</option>
+        </field>
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+      </fieldset>
+    </fields>
+  </config>
+</install>

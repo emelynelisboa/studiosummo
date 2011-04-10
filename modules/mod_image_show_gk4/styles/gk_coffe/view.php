@@ -20,7 +20,8 @@ defined('_JEXEC') or die;
 	
 	<div class="gkIsImage" style="width: <?php echo $width; ?>px;height: <?php echo $height; ?>px;">
 		<?php for($i = 0; $i < count($this->config['image_show_data']); $i++) : ?>
-		<?php if($this->config['image_show_data'][$i]->published) : ?>
+        
+        <?php if($this->config['image_show_data'][$i]->published) : ?>
 			<?php 
 				
 				unset($path, $title, $link);

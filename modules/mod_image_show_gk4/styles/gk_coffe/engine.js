@@ -30,15 +30,14 @@ window.addEvent("load",function(){
 			var imagesToLoad = [];
 			
 			wrapper.getElements('.gkIsSlide').each(function(el,i){
-				links.push(el.getFirst().getProperty('href'));
 				var newImg = new Element('img',{
 					"title":el.getProperty('title'),
 					"class":el.getProperty('class'),
 					"style":el.getProperty('style')
 				});
-				
-				newImg.setProperty('alt',el.getChildren()[0].getProperty('href'));
-				el.getFirst().destroy();
+				newImg.store('num', i);
+				links[i] = el.getElement('a').getProperty('href');
+				el.getElement('a').destroy();
 				newImg.setProperty("src",el.innerHTML);
 				imagesToLoad.push(newImg);
 				newImg.injectAfter(el);
@@ -66,14 +65,18 @@ window.addEvent("load",function(){
 				wrapper.getElements(".gkIsSlide").each(function(elmt,i){
 					slides[i] = elmt;
 					if($G['slide_links']){
-						elmt.addEvent("click", function(){window.location = elmt.getProperty('alt');});
+						elmt.addEvent("click", function(e){ 
+				            window.location = links[$(e.target).retrieve('num')]; 
+                        });
 						elmt.setStyle("cursor", "pointer");
 					}
 				});
 				
 				slides.each(function(el,i){
-					if(i != 0) 
+					if(i != 0) { 
 						el.setOpacity(0);
+						el.setStyle('display', 'none');
+					}
 				});
 				
 				if(wrapper.getElement(".gkIsText")){
@@ -128,8 +131,10 @@ function gk_is_gk_coffe_anim(wrapper, contents, slides, which, $G){
 		var actual = $G['actual_slide'];
 		
 		$G['actual_slide'] = which;
-		slides[$G['actual_slide']].setStyle("z-index",max+1);
 		new Fx.Tween(slides[actual], {duration: $G['anim_speed'], property: 'opacity'}).start(1,0);
+		
+		(function(){ slides[actual].setStyle('display', 'none') }).delay($G['anim_speed'] + 50);
+		slides[which].setStyle('display', 'block');
 		new Fx.Tween(slides[which], {duration: $G['anim_speed'], property: 'opacity'}).start(0,1);	
 			
 		switch($G['anim_type']){

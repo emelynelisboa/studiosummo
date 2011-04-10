@@ -37,18 +37,20 @@ window.addEvent("load",function(){
 	});
 	// get the updates
 	getUpdates();
-	var add_form = $('gk_tab_add_form');
+	var add_form = document.id('gk_tab_add_form');
 	// get the tabs data
-	var tabs = JSON.decode($('jform_params_image_show_data').innerHTML);
+	var tabs = JSON.decode(document.id('jform_params_image_show_data').innerHTML);
 	if(tabs == null || tabs == '') tabs = [];
-	var config = JSON.decode($('jform_params_config').innerHTML);
+	var config = JSON.decode(document.id('jform_params_config').innerHTML);
 	if(config == null || config == '') config = {};
 
 	// fix problem with the accordion height
-	$('IMAGE_SHOW_MANAGER-options').addEvent('click', function(){
-		if($('IMAGE_SHOW_MANAGER-options').hasClass('pane-toggler')) {
-			(function(){ $$('.pane-slider').setStyle('height', 'auto'); }).delay(750);
-		}
+	document.id('IMAGE_SHOW_MANAGER-options').addEvent('click', function(){
+		(function(){ 
+            if(document.id('IMAGE_SHOW_MANAGER-options').hasClass('pane-toggler-down')) {
+                $$('.pane-slider').setStyle('height', 'auto'); 
+            }
+        }).delay(750);
 	});
 	// get public/register texts
 	var public_text = add_form.getElements('.gk_tab_add_content_access option')[0].innerHTML;
@@ -56,9 +58,9 @@ window.addEvent("load",function(){
 	var module_text = add_form.getElements('.gk_tab_add_type option')[1].innerHTML;
 	var article_text = add_form.getElements('.gk_tab_add_type option')[0].innerHTML;
 	
-	var published_text = $('invisible').getElements('.gk_tab_item_state span')[0].innerHTML;
-	var unpublished_text = $('invisible').getElements('.gk_tab_item_state span')[1].innerHTML;
-	$('invisible').getElements('.gk_tab_item_state span').destroy();
+	var published_text = document.id('invisible').getElements('.gk_tab_item_state span')[0].innerHTML;
+	var unpublished_text = document.id('invisible').getElements('.gk_tab_item_state span')[1].innerHTML;
+	document.id('invisible').getElements('.gk_tab_item_state span').destroy();
 	// set the add form
 	if(add_form.getElement('.gk_tab_add_type').value == 'article') {
 		add_form.getElement('.gk_tab_add_art').setStyle('display', 'block');
@@ -88,15 +90,15 @@ window.addEvent("load",function(){
 		}
 	});
 	//
-	var add_form_scroll_wrap = $('gk_tab_add_form').getElement('.height_scroll');
+	var add_form_scroll_wrap = document.id('gk_tab_add_form').getElement('.height_scroll');
 	var add_form_scroll = new Fx.Tween(add_form_scroll_wrap, { duration: 250, property: 'height', onComplete: function() { if(add_form_scroll_wrap.getSize().y > 0) add_form_scroll_wrap.setStyle('height', 'auto'); } });
 	//
-	$('gk_tab_add_header').getElement('a').addEvent('click', function(e) {
+	document.id('gk_tab_add_header').getElement('a').addEvent('click', function(e) {
 		e.stop();
 		add_form_scroll.start(add_form.getElement('.gk_tab_add').getSize().y);
 	});
 	//
-	$('gk_tab_add_header').addEvent('click', function(e) {
+	document.id('gk_tab_add_header').addEvent('click', function(e) {
 		e.stop();
 		add_form_scroll.start(add_form.getElement('.gk_tab_add').getSize().y);
 	});
@@ -132,7 +134,7 @@ window.addEvent("load",function(){
 	// create item
 	function create_item(source) {
 		// duplicate item structure
-		var item = $('invisible').getElement('.gk_tab_item').clone();
+		var item = document.id('invisible').getElement('.gk_tab_item').clone();
 		// get the values from the form
 		var name = (source == 'new') ? add_form.getElement('.gk_tab_add_name').get('value') : source.name;
 		var type = (source == 'new') ? add_form.getElement('.gk_tab_add_type').get('value') : source.type;
@@ -244,7 +246,7 @@ window.addEvent("load",function(){
 			// remove the item from list
 			item.destroy();
 			// put the data to textarea field
-			$('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
+			document.id('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
 		});
 		// cancel edit
 		item.getElements('.gk_tab_edit_submit a')[1].addEvent('click', function(e) {
@@ -293,7 +295,7 @@ window.addEvent("load",function(){
 			// hide the form
 			item.getElements('.gk_tab_edit_submit a')[1].fireEvent('click');
 			// put the data to textarea field
-			$('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
+			document.id('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
 		});
 		// order up 
 		item.getElement('.gk_tab_item_order_up').addEvent('click', function(e) {
@@ -316,7 +318,7 @@ window.addEvent("load",function(){
 					wrap.getElements('.gk_tab_item_order_down')[items.length - 1].setStyle('opacity', 0.3);
 				}
 				// put the data to textarea field
-				$('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
+				document.id('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
 			}	
 		});
 		// order down
@@ -340,7 +342,7 @@ window.addEvent("load",function(){
 					wrap.getElements('.gk_tab_item_order_down')[items.length - 1].setStyle('opacity', 0.3);
 				}
 				// put the data to textarea field
-				$('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
+				document.id('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
 			}		
 		});
 		//
@@ -363,14 +365,14 @@ window.addEvent("load",function(){
 			// clear and hide the form
 			add_form_btns[1].fireEvent('click');
 			// put the data to textarea field
-			$('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
+			document.id('jform_params_image_show_data').innerHTML = JSON.encode(tabs);
 			
 			SqueezeBox.assign(item.getElements('.gk-modal'), { parse: 'rel' });
 		} /*else {
 			SqueezeBox.assign(item.getElements('.gk-modal'), { parse: 'rel' });
 		}*/
 		// put the item to the list
-		item.inject($('tabs_list'), 'bottom');
+		item.inject(document.id('tabs_list'), 'bottom');
 		// refresh order buttons state
 		var wrap = item.getParent();
 		var items = wrap.getElements('.gk_tab_item');
@@ -423,35 +425,35 @@ window.addEvent("load",function(){
 		el.getElements('.field').each(function(elm) {
 			elm.addEvent('change', function() {
 				config[style_name][elm.getProperty('id')] = elm.get('value');
-				$('jform_params_config').innerHTML = JSON.encode(config);
+				document.id('jform_params_config').innerHTML = JSON.encode(config);
 			});
 			
 			elm.addEvent('blur', function() {
 				config[style_name][elm.getProperty('id')] = elm.get('value');
-				$('jform_params_config').innerHTML = JSON.encode(config);
+				document.id('jform_params_config').innerHTML = JSON.encode(config);
 			});
 		});
 		
-		$('jform_params_config').innerHTML = JSON.encode(config);
+		document.id('jform_params_config').innerHTML = JSON.encode(config);
 	});
 	
 	// enable time update in last_modification element
 	(function() {
-		$('jform_params_last_modification').set('value', Math.round(new Date().getTime() / 1000));
+		document.id('jform_params_last_modification').set('value', Math.round(new Date().getTime() / 1000));
 	}).periodical(3000);
 	
 	// initialize switcher
 	$$('.module_style').setStyle('display', 'none');
-	$('module_style_' + $('jform_params_module_style').get('value')).setStyle('display', 'block');
+	document.id('module_style_' + document.id('jform_params_module_style').get('value')).setStyle('display', 'block');
 	
-	$('jform_params_module_style').addEvent('change', function() {
+	document.id('jform_params_module_style').addEvent('change', function() {
 		$$('.module_style').setStyle('display', 'none');
-		$('module_style_' + $('jform_params_module_style').get('value')).setStyle('display', 'block');
+		document.id('module_style_' + document.id('jform_params_module_style').get('value')).setStyle('display', 'block');
 	});
 	
-	$('jform_params_module_style').addEvent('blur', function() {
+	document.id('jform_params_module_style').addEvent('blur', function() {
 		$$('.module_style').setStyle('display', 'none');
-		$('module_style_' + $('jform_params_module_style').get('value')).setStyle('display', 'block');
+		document.id('module_style_' + document.id('jform_params_module_style').get('value')).setStyle('display', 'block');
 	});
 	
 	// other form operations
@@ -482,13 +484,13 @@ window.addEvent("load",function(){
 	link.inject($$('div.panel')[$$('div.panel').length-1].getElement('h3'), 'bottom');
 	link.addEvent('click', function(e) { e.stopPropagation(); });
 	//
-	$('IMAGE_SHOW_MANAGER-options').getParent().getElement('.panelform .adminformlist li').setStyle('border', 'none');
+	document.id('IMAGE_SHOW_MANAGER-options').getParent().getElement('.panelform .adminformlist li').setStyle('border', 'none');
 });
 // function to generate the updates list
 function getUpdates() {
-	$('jform_params_module_updates-lbl').destroy(); // remove unnecesary label
+	document.id('jform_params_module_updates-lbl').destroy(); // remove unnecesary label
 	var update_url = 'http://www.gavick.com/updates.raw?task=json&tmpl=component&query=product&product=mod_image_show_gk4_j16';
-	var update_div = $('gk_module_updates');
+	var update_div = document.id('gk_module_updates');
 	update_div.innerHTML = '<div id="gk_update_div"><span id="gk_loader"></span>Loading update data from GavicPro Update service...</div>';
 	
 	new Asset.javascript(update_url,{
@@ -515,9 +517,3 @@ function htmlspecialchars_decode(string) {
 	string = string.replace(/\[ampersand\]/g, '&').replace(/\[leftbracket\]/g, '<').replace(/\[rightbracket\]/g, '>');
 	return string;
 }
-
-////////////////
-//
-// SqueezeBox.assign($$('a.modal'), { parse: 'rel' });
-//
-//////////////// 

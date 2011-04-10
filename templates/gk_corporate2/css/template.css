@@ -98,7 +98,7 @@ a:hover#gkToolsDec { background-position: 0 0 }
 #gkBreadcrumb { margin:0 0 10px 0; font-size:90%; background:#dddad8; height:24px; line-height:24px; color:#979189; padding:0 15px; clear:both; }
 #gkBreadcrumb a { cursor: pointer; color: #979189 }
 #gkBreadcrumb a:hover { color: #979189; text-decoration: underline}
-.breadcrumbs { float: left; width: 80%; }
+.breadcrumbs { float: left; width: 100%; }
 .breadcrumbs .separator { padding: 0 4px; color: #afafaf }
 /* Module styles */
 #gkWrap2 .box,

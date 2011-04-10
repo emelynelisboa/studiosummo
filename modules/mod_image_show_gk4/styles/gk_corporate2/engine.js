@@ -3,7 +3,7 @@ window.addEvent("load",function(){
 		if(!el.hasClass('activated')) {
 			el.addClass('activated');	
 			var elID = el.getProperty("id");
-			var wrapper = $(elID);
+			var wrapper = document.id(elID);
 			var $G = $Gavick[elID];
 			$G['actual_animation'] = false;
 			$G['actual_slide'] = 0;
