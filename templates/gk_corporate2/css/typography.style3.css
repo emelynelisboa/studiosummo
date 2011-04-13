@@ -272,7 +272,7 @@ div.gkLegend7 h4:first-child { border: solid 1px #DDDAD9 }
 .gkHighlight3 {background:#115bb2; color:#fff}
 .gkHighlight4 { background:#333333; color:#fff; }
 span.gkClear-2 { border-top:1px solid #333; border-bottom:1px solid #333; color:#333}
-span.gkClear{border-top:1px solid #57a8f0; border-bottom:1px solid #57a8f0; color:#57a8f0}
+span.gkClear, div.contact h3{border-top:1px solid #57a8f0; border-bottom:1px solid #57a8f0; color:#57a8f0}
 span.gkClear-1{border-top:1px solid #115bb2; border-bottom:1px solid #115bb2; color:#115bb2}
 span.gkColor{color:#57a8f0}
 span.gkColor-1{color:#115bb2}

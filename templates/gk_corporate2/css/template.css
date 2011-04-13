@@ -49,7 +49,7 @@ p { margin: 0.8em 0 }
 /* Containers */
 #gkPageTop {margin: 0; padding: 30px 0 3px; overflow:hidden; color:#6c6459}
 #gkPageTop a {color:#6c6459; margin:0 6px 0 0; font-size:90%; display:block; float:right; text-transform:lowercase; line-height:24px; padding:0 8px}
-#gkMenu { float: left; width: auto; height: 40px; background-color: #6C6459 }
+#gkMenu { float: left; /*width: auto;*/width:670px; height: 40px; background-color: #6C6459 }
 #gkSearch { float: right; width: auto; padding: 0}
 #gkButtonLogin { float: right}
 #gkContentMainbody {width: auto; overflow:hidden; }
@@ -58,7 +58,7 @@ p { margin: 0.8em 0 }
 #gkMainbodyBottom .box {border: none !important}
 #gkContentBottom {margin-top: 10px !important}
 /* Logo */
-#gkLogo { /*height: 40px;*/height: 100px;position:absolute; top:16px; margin: 0; line-height: 100%; }
+#gkLogo { /*height: 40px;*/height: 100px;position:absolute; top:14px; margin: 0; line-height: 100%; }
 .gkLogoText  {font-size:20px; line-height:20px; height:20px; color:#6b6459; text-transform:uppercase;}
 #gkLogo.text a { color:#6b6459;}
 #gkLogo.text a:hover {text-decoration:none;}
@@ -106,7 +106,7 @@ a:hover#gkToolsDec { background-position: 0 0 }
 #gkWrap2 .box_text {padding: 24px; background: #fff;  border:1px solid #c8c3be; border-top:none!important; border-left:none!important;   margin-top: 10px;overflow: hidden;}
 #gkWrap2 .box:first-child,
 #gkWrap2 .box_menu:first-child,
-#gkWrap2 .box_text:first-child { margin-top: 0!important; }
+#gkWrap2 .box_text:first-child { margin-top: 0!important;}
 #gkWrap2 .box_menu h3,
 #gkWrap2 .box_text h3,
 #gkWrap2 .box h3 > span { height:8px; line-height:8px; text-transform:uppercase; color:#fff; background:#bbb6b1; font-weight:bold; font-size:11px ; padding:4px 4px 2px; width:auto;}
@@ -212,3 +212,9 @@ div.box.blue a {color: #fff!important}
 .box.clear { border: none !important; padding: 0 !important; background: none !important; }
 /* Login + Register */
 .registration .spacer {font-size: 80% !important}
+
+/*n30 css*/
+ul.newsfeed h4 {font-size: 100%; font-weight:normal; line-height: 1em;}
+ul.newsfeed li a{color:#115BB2;}
+ul.newsfeed p {font-size: 90%;}
+#gkWrap2 .box ul.newsfeed li {background:none; border-top: 1px dotted #DAD6D1; padding: 5px 0 0 14px;}
