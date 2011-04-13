@@ -109,7 +109,7 @@ dl.article-info dd { float: left; margin-right: 16px; }
 .deliciousBtn { background:transparent url('../images/delicious_icon.gif') no-repeat left center; }
 .instapaperBtn { background:transparent url('../images/instapaper_icon.png') no-repeat left center; }
 /*contact*/
-.contact .jicons-icons {display: none}
+.contact .jicons-icons {/*display: none*/ font-weight: bold; font-style: italic;}
 
 /* pagination */
 div.pagination {display: inline}
@@ -213,7 +213,7 @@ label.hasTip { margin-left:5px; }
 .contact-category { padding:0 10px }
 .contact-category #adminForm fieldset.filters { border:0; padding:0 }
 .contact-image { overflow:hidden; float: right; margin: 30px; border:1px solid #dcdad1; background: #f6f4f1; padding: 6px 6px 0 }
-address { font-style:normal; margin:10px 0; }
+address { font-style:normal; margin:10px 0 0 30px; }
 address span { display:block }
 span.contact-image { margin-bottom:10px; overflow:hidden; display:block }
 .contact-address { margin:20px 0 10px 0; }

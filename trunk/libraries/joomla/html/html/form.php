@@ -28,6 +28,7 @@ abstract class JHtmlForm
 	 */
 	public static function token()
 	{
-		return '<input type="hidden" name="'.JUtility::getToken().'" value="1" />';
+		return '<input type="hidden" name="'.JHTML::_( 'form.token' ).'" value="1" />';
+		//JUtility::getToken()
 	}
 }
