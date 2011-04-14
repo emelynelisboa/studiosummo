@@ -24,6 +24,8 @@
       <input type="hidden" name="option" value="com_users" />
       <input type="hidden" name="task" value="user.logout" />
       <input type="hidden" name="return" value="<?php echo $return; ?>" />
+      <!-- n30 fix -->
+      <?php echo JHtml::_('form.token'); ?>
 </form>
 <?php else : ?>
 <form action="<?php echo JRoute::_('index.php', true, $params->get('usesecure')); ?>" method="post" id="login-form" >
@@ -49,7 +51,7 @@
             <input type="hidden" name="option" value="com_users" />
             <input type="hidden" name="task" value="user.login" />
             <input type="hidden" name="return" value="<?php echo $return; ?>" />
-            <?php echo JHtml::_('form.token'); ?>
+            <?php echo JHtml::_('form.token'); ?>            
             <?php if (JPluginHelper::isEnabled('system', 'remember')) : ?>
             <div id="form-login-remember">
                   <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
