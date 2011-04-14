@@ -85,7 +85,9 @@ if($this->browser->get('browser') != 'ie6') {
 	}
 	// include JavaScript
 	$this->addJS($this->URLtemplate() . '/js/gk.scripts.js');
-	
+	//n30 14/04/2011
+    $this->addJS($this->URLtemplate() . '/js/mootools-equalizer.js');
+        
 	if($this->browser->get('browser') == 'ie7') {
 		$this->addJS($this->URLtemplate() . '/js/ie7.equal.columns.js');
 	}
