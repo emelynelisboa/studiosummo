@@ -79,6 +79,7 @@ class GKTemplate {
         $this->socialApiParser($embed_mode);
         // mobile parsing
         $this->mobileParser();
+        
         // define an event for replacement
         $dispatcher = JDispatcher::getInstance();
         $dispatcher->register('onAfterRender', 'GKParserPlugin');

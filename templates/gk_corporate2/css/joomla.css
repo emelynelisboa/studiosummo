@@ -109,7 +109,7 @@ dl.article-info dd { float: left; margin-right: 16px; }
 .deliciousBtn { background:transparent url('../images/delicious_icon.gif') no-repeat left center; }
 .instapaperBtn { background:transparent url('../images/instapaper_icon.png') no-repeat left center; }
 /*contact*/
-.contact .jicons-icons {/*display: none*/ font-weight: bold; font-style: italic;}
+.contact .jicons-text {/*display: none*/ font-weight: bold; font-style: italic;}
 
 /* pagination */
 div.pagination {display: inline}
