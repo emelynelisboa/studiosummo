@@ -21,12 +21,9 @@ window.addEvent('load', function() {
 	
 	var columnizer = new Equalizer('.gkCol:not(.gkColLeft) .box').equalize('height');	
 	var height = parseInt($$("#gkToptop4 .box").getStyle("min-height").toString().replace("px",""));	
-	var offset = 110; /*che sarebbe 24px di padding per entrambi i box(x4), + 10px di margin-top solo per uno, + 1px di bordi */
-	var mid = (height - offset) / 2;
-	var mod = (height - offset) % 2;
-	/*alert(height);
-	alert(mid);
-	alert(mod);*/	
+	var offset = 120; /*che sarebbe 24px di padding per entrambi i box(x4), + 10px di margin-top solo per uno, + 1px di bordi */
+	var mid = Math.round((height - offset) / 2);
+	var mod = (height - offset) % 2;	
 	$$("#gkToptop2 .box").setStyle("min-height", mid + "px");	
-	$$("#gkToptop2 .dark").setStyle("min-height", (mid + mod) + "px");
+	$$("#gkToptop2 .dark").setStyle("min-height", mid + "px");
 });
