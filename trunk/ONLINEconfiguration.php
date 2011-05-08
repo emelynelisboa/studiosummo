@@ -9,10 +9,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
-	public $host = '62.149.150.115';
-	public $user = 'Sql409589';
-	public $password = '4e33174e';
-	public $db = 'Sql409589_4';
+	public $host = '62.149.150.130';
+	public $user = 'Sql444682';
+	public $password = '75d61f9a';
+	public $db = 'Sql444682_1';
 	public $dbprefix = 'jos_';
 	public $live_site = '';
 	public $secret = 'L4tFc8LuVPFAWiPC';
@@ -28,7 +28,7 @@ class JConfig {
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
 	public $mailer = 'mail';
-	public $mailfrom = 'n30soft@gmail.com';
+	public $mailfrom = 'stdsummo@tin.it';
 	public $fromname = 'Studio Summo';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
@@ -41,7 +41,7 @@ class JConfig {
 	public $cache_handler = 'file';
 	public $cachetime = '15';
 	public $MetaDesc = 'Studio Summo Ruvo di Puglia';
-	public $MetaKeys = 'studio,commerciale,commercialista,summo,ruvo,puglia';
+	public $MetaKeys = 'studio,commerciale,commercialista,summo,ruvo,puglia,legale,tributario';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
 	public $sef = '1';
@@ -49,8 +49,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = 'C:\\Program Files (x86)\\EasyPHP-5.3.3.1\\www\\studiosummo\\logs';
-	public $tmp_path = 'C:\\Program Files (x86)\\EasyPHP-5.3.3.1\\www\\studiosummo\\tmp';
+	public $log_path = '/web/htdocs/www.studiosummo.it/home/logs';
+	public $tmp_path = '/web/htdocs/www.studiosummo.it/home/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 }
