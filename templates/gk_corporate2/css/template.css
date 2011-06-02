@@ -10,7 +10,7 @@
 */
 
 /* Basic elements */
-body { min-height:100%; line-height:1.7; background:#f4f2ef; color:#979189;  }
+body { min-height:100%; line-height:1.7; background:#f4f2ef; /*color:#979189;*/ color: #666;  }
 body.fs1 { font-size:10px }
 body.fs2 { font-size:11px }
 body.fs3 { font-size:12px }
